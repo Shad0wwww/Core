@@ -1,0 +1,77 @@
+prefix: "&8&l[ &a&LANTIBUG &8&l]"
+only_player_command: "Kun spillere kan bruge denne command"
+no_permission: "%prefix% &cDu har ikke adgang."
+permission-to-get-bug-messages: "antibug.messages"
+reload:
+    success: "%prefix% &asuccelsful reloaded."
+    error: "%prefix% &cDer opstod en fejl."
+    started: "%prefix% &aReload er begyndt."
+
+#This is the option for the flowerpot bug
+#%player% The player that used the bug.
+flowerpot:
+    enabled: true
+    message: "%prefix% &fDu kan ikke udnytte denne bug."
+    send_to_staff: "%prefix% &c%player% &fprøvede at udnytte flowerpot bug."
+#This is the option for the skull bug
+#
+skullgrief:
+    enabled: true
+    message: "%prefix% &fDu kan ikke udnytte denne bug."
+    send_to_staff: "%prefix% &c%player% &fprøvede at udnytte skullgrief buggen."
+
+anvilgrief:
+    enabled: true
+    message: "%prefix% &fDu kan ikke udnytte denne bug."
+    send_to_staff: "%prefix% &c%player% &fprøvede at udnytte anvil buggen."
+
+blacklist:
+    kickMessage: "[ANTI] BOG DETECTED: KICKED"
+    names:
+        - "TheAncientBook"
+
+combatSystem:
+    enabled: false
+    combat-tid: 12
+    message: "&8&L[ &c&LCOMBAT &8&l] &f i %time%"
+    respawnMessage: "&8&L[ &c&LCOMBAT &8&l] &fDu er nu ude af combat"
+    leavede: "&8&L[ &c&LCOMBAT &8&l] &f%player% leavede i combat"
+
+
+#Ved ikke om dette virker.
+damage-exploit-disabler:
+    enabled: true
+    message: "%prefix% &fDet ser ud til du bruger en Damage Bug, du kan derfor ikke slå folk."
+    fix-message: "%prefix% &f Få droppet et sværd til dig, så kan du slå igen."
+
+authenticate:
+    enabled: true
+    #mojangError have following placeholders: %error% and %errorMessage%
+    requestError: "&cUnable to authenticate - no data provided from the Mojang API"
+    mojangError: "&cUnable to authenticate - %error%"
+    invalidData: "&cUnable to authenticate - Username and Uuid is not matching"
+
+#
+# ➜ Spilleren der joinede: %player%
+# ➜ Antal spiller der er joined i alt: %allPlayers%
+joinmessage:
+    firstjoin: "&8&l[ &a&LFIRSTJOIN &8&L] &a%player% &fjoinede som nummer &a%allPlayers%"
+    join: "&8&l[ JOIN &8&l] &f%player%"
+
+auto-broadcast:
+    enabled: true
+    # The Duration between each broadcast in seconds
+    interval: 300
+    broadcast-messages:
+        '1':
+            - "&8&m---------------------&r &a&lBUYCRAFT &8&m---------------------"
+            - "&eKunne du godt tænke dig at &astøtte &eos? Benyt &a/buy &e for at kunne"
+            - "&ekøbe &6coins&e! Disse &6coins &ekan du bruge til at købe &6ranks &eog &6kits&e!"
+            - "&8&m---------------------&r &a&lBUYCRAFT &8&m---------------------"
+        '2':
+            - "&8&m---------------------&r &9&lDISCORD &8&m---------------------"
+            - "&eVil du gerne være opdateret på alt der sker på serveren?"
+            - "&eSå er du velkommen til at join vores &9Discord &eserver!"
+            - "&eDu kan joine ved at benytte &9/discord&e!"
+            - "&8&m---------------------&r &9&lDISCORD &8&m---------------------"
+            -

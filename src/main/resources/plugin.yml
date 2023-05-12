@@ -1,0 +1,11 @@
+name: Core
+version: '${project.version}'
+main: dk.shadow.anti.Main
+authors: [ Shad0wsense ]
+description: A plugin there blocks bugs.
+commands:
+  spacexcore:
+    description: a reload command
+    aliases:
+      - ab
+      - anti
